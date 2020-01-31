@@ -3,7 +3,7 @@
     background-color: white;
     max-width: 300px;
     padding: 20px;
-    width: 80%;
+    width: 90%;
 }
 
 .fab {
@@ -27,8 +27,7 @@
     margin-bottom: 60px;
 }
 
-.contact-main .wrapper:nth-of-type(2),
-.blog-main .wrapper:nth-of-type(2) {
+.contact-main .wrapper:nth-of-type(2){
     margin-top: 60px;
 }
 
@@ -55,7 +54,8 @@ form {
 
 .side-bar-container {
     margin-top: 40px;
-    width: 35%;
+    min-width: 35%;
+    flex: 1 0 35%;
 }
 
 .sticky {

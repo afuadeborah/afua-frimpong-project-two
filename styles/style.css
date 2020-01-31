@@ -303,19 +303,8 @@ form button:hover {
   font-size: 1.8rem;
 }
 
-.blog-main .side-bar-container,
-.flex-wrapper {
-  margin-top: 60px;
-}
-
-.recent-posts {
-  margin-top: 10px;
-}
-
-.blog-wrapper {
-  background-color: white;
-  max-width: 680px;
-  width: 90%;
+.blog-main {
+  margin-top: 80px;
 }
 
 .flex-wrapper {
@@ -324,12 +313,27 @@ form button:hover {
   display: flex;
 }
 
+.flex-wrapper .sidebar-container {
+  margin-top: 0;
+}
+
+.recent-posts {
+  margin-top: 10px;
+}
+
+.blog-wrapper {
+  background-color: white;
+}
+
+.flex-wrapper .sidebar-container {
+  margin-top: 0;
+}
+
 .right-container {
-  width: 65%;
-  margin-top: 60px;
+  margin-top: 40px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 65%;
-          flex: 1 0 65%;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
 }
 
 .blog-post,
@@ -349,12 +353,16 @@ form button:hover {
   height: 100px;
 }
 
+.blog-wrapper form {
+  width: auto;
+}
+
 .side-bar,
 .recent-posts {
   background-color: white;
   max-width: 300px;
   padding: 20px;
-  width: 80%;
+  width: 90%;
 }
 
 .fab {
@@ -380,8 +388,7 @@ form button:hover {
   margin-bottom: 60px;
 }
 
-.contact-main .wrapper:nth-of-type(2),
-.blog-main .wrapper:nth-of-type(2) {
+.contact-main .wrapper:nth-of-type(2) {
   margin-top: 60px;
 }
 
@@ -414,7 +421,10 @@ form {
 
 .side-bar-container {
   margin-top: 40px;
-  width: 35%;
+  min-width: 35%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 35%;
+          flex: 1 0 35%;
 }
 
 .sticky {
