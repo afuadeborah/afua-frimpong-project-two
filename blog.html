@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harper | Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="blog-header">
+        <!-- put a background image on this -->
+        <nav>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+    
+                <li>
+                    <a href="#about">About</a>
+                </li>
+    
+                <li>
+                    <p class="menu-text">Harper</p>
+                </li>
+    
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+    
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- fixed menu -->
+    </header>
+
+    <div class="blog-background">
+        <div class="wrapper">
+            <h1 class="sticky">Blog</h1>
+        </div>
+    </div>
+    <main class="blog-main">
+        <div class="wrapper flex-wrapper">
+
+            <div class="side-bar-container">
+                <div class="side-bar">
+                    <img src="./harper-assets/blog-image-2.jpg" alt="girl wearing pink laying on grey and blue background">
+                    <h4>About Harper</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, doloremque voluptatem.</p>
+                    <a href="#about">Find out more</a>
+                    <!-- style this when active -->
+                </div>
+
+                <div class="recent-posts">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- background image on whole divs for both -->
+            </div>
+
+
+
+<!-- actual blog -->
+        <div class="right-container">
+            <div class="blog-wrapper">
+                <div class="blog-post">
+                    <h4>My Favourite Travel Destinations</h4>
+
+                    <p>Monday January 27th, 2020 by Maggie</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic perferendis eveniet! Cupiditate molestias dolor neque officiis ratione expedita rerum.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cupiditate possimus quas quos ratione iusto, natus omnis deleniti illo ipsum, a expedita, odit est eaque.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, officia deleniti sed repellat commodi provident ipsum incidunt est totam similique, nemo explicabo esse nihil consequuntur nisi reprehenderit modi qui quas doloremque quae dolore fugit asperiores. Qui suscipit quae, repellendus non enim excepturi fuga vel obcaecati modi ipsa, ut commodi autem!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione numquam natus fugit voluptas reiciendis!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta dolores explicabo sunt, vero dolor. Aspernatur quis doloribus odit provident.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga magni dignissimos fugiat odio dolorem consequuntur obcaecati modi quas, nam quod, in sapiente accusantium nisi illum laboriosam sunt temporibus similique distinctio repudiandae! Facilis ipsam commodi incidunt iste veritatis accusamus! Tempore cupiditate qui dolorem harum consequatur?</p>
+                </div>
+                <!-- make sure I can use h2 here and not p -->
+            </div>
+            <!-- blue bottom border -->
+    <!-- 2 single posts -->
+            <div class="blog-wrapper">
+                <!-- <div class="date-posts"> -->
+                    <div class="single-post">
+                        <img src="./harper-assets/blog-image-3.jpg" alt="brunette girl on pink background">
+                        <div class="single-post-text">
+                            <p>Monday January 27th, 2020 by Maggie</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, delectus praesentium corrupti iure earum itaque odio voluptatibus veniam, provident commodi id animi vero nobis officiis.</p>
+                        </div>
+                    </div>
+
+                    <div class="single-post">
+                        <img src="./harper-assets/blog-image-4.jpg" alt="blonde girl blowing a pink bubblegum bubble ">
+                        <div class="single-post-text">
+                        <p>Tuesday January 28th, 2020</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum sint suscipit consectetur doloribus ex ipsa, odio voluptatibus explicabo amet necessitatibus impedit, voluptatum distinctio facilis minima.</p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <!-- blue bottom border -->
+
+            <div class="blog-wrapper">
+                <form action="post-comment">
+                    <div class="personal-info">
+                        <input type="text" required="true" placeholder="Name">
+                        <input type="email" required="true" placeholder="Email address">
+                    </div>
+                    <textarea name="comments" id="" cols="60" rows="15" placeholder="Comment"></textarea>        
+                    <button type="submit">Post Comment</button>
+                </form>
+            <!-- focus to change colour -->
+            <!-- add styling on button when active -->
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="bottom">Copyright© 2020 Juno College</p>
+    </footer>
+    
+</body>
+</html>
+<!-- flex grow/shrink is good if we want one element to always be smaller or bigger than the rest of the elements in the same container -->
+<!-- set a flex basis on the harper in the nav -->
+

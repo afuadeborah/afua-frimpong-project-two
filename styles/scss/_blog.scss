@@ -1,0 +1,52 @@
+.blog-background {
+    @include background-image( url(../harper-assets/blog-image-1.jpg) );
+}
+
+.blog-main p,
+.blog-main a {
+    font-size: 1.8rem;
+}
+
+
+// Sidebar
+.blog-main .side-bar-container,
+.flex-wrapper {
+    margin-top: 60px;
+}
+.recent-posts {
+    margin-top: 10px;
+}
+
+
+//  Main Blog 
+.blog-wrapper {
+    background-color: white;
+    max-width: 680px;
+    width: 90%;
+}
+
+.flex-wrapper {
+    display: flex;
+    // margin-top: 60px;
+}
+
+.right-container {
+    width: 65%;
+    margin-top: 60px;
+    flex: 1 0 65%;
+}
+
+.blog-post,
+.single-post {
+    padding: 25px;
+}
+
+.single-post {
+    display: flex;
+    margin: 20px 0;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}

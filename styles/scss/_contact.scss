@@ -1,0 +1,64 @@
+.side-bar,
+.recent-posts {
+    background-color: white;
+    max-width: 300px;
+    padding: 20px;
+    width: 80%;
+}
+
+.fab {
+    color: $dark-blue;
+}
+
+.address p {
+    font-size: 1.9rem;
+}
+
+.address p:first-child {
+    font-weight: 500;
+    font-family: $header-font;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contact-main .wrapper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contact-main .wrapper:nth-of-type(2),
+.blog-main .wrapper:nth-of-type(2) {
+    margin-top: 60px;
+}
+
+.contact-background{
+    @include background-image(url(../harper-assets/contact-image-1.jpg))
+}
+
+.icon-container {
+    display: flex;
+    margin-bottom: 10px;
+
+    li {
+        margin: 0 10px;
+        
+    }:first-child {
+
+        margin-left: 0;
+    }
+}
+
+form {
+    margin: 30px 0;
+}
+
+.side-bar-container {
+    margin-top: 40px;
+    width: 35%;
+}
+
+.sticky {
+    position: relative;
+    top: 190px;
+}

@@ -1,0 +1,245 @@
+@import 'setup';
+@import 'variables-mixins';
+@import 'navigation';
+@import 'form';
+@import 'blog';
+@import 'contact';
+
+// Strip Club
+a,
+li,
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+// Settings
+html {
+    font-size: 62.5%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body{
+    font-family: $body-font;
+    font-size: 2rem;
+    line-height: 32px;
+    background-color: $white;
+    color: $text-color;
+    text-align: left;
+}
+
+// Main Page
+.wrapper,
+.photo-wrapper,
+.main-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+nav p,
+nav a,
+button a {
+    font-family: $header-font;
+}
+
+
+h1 {
+    @include font-settings(120);
+    line-height: 92px;
+}
+
+h2,
+nav p {
+    @include font-settings(42);
+}
+
+h3,
+.fas {
+    @include font-settings(32);
+}
+
+h4{
+    @include font-settings(24);
+}
+
+button {
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    border-radius: 1px;
+    padding: 10px 30px;
+    max-width: 300px;
+
+    a {
+        color: $text-color;
+        @include font-settings (20);
+        line-height: 32px;
+    } 
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+
+.fas {
+    background-color: $light-blue;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+
+.fab,
+.fas {
+    font-size: 2.5rem;
+}
+
+
+// Harper Main Page
+.header-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-pic {
+    width: calc(50% - 50px);
+    margin-right: 50px;
+
+
+    img {
+        position: relative;
+        top: 70px;
+    }
+}
+
+.header-text img {
+    position: relative;
+    width: auto;
+    // right: -70%;
+    // top: 17;
+}
+
+
+// Who Is She
+.main-wrapper {
+    
+    .who-is-she {
+        padding: 60px 0;
+        margin: 80px 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: relative;
+        left: 45%;
+        margin-left: 50px;
+
+        p {
+            margin: 30px 0;
+        }
+    }
+}
+// adjust margin and padding for responsivity
+
+
+
+
+.four-square p{
+    margin-left: 35px;
+}
+
+.mid-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+    li {
+        width: 100%;
+        flex: 1 0 calc(50% - 20px);
+        margin: 50px 0;
+    }
+}
+
+
+// Text & Pic Grid 
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+}
+
+.image-container,
+.text-container {
+    width: 100%;
+    flex: 1 0 50%;
+}
+
+.text-container {
+    // padding: 70px;
+}
+
+// Her Journey
+.her-journey {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// 3 Pic Grid
+.bottom-three {
+    display: flex;
+    justify-content: space-around;
+}
+
+.three-pic {
+    margin: 30px 10px;
+    width: calc(33% - 30px);  
+    @include grow-shrink(33%);
+}
+
+
+
+
+
+
+
+
+
+
+// Footer
+.bottom {
+    background-color: $text-color;
+    color: $white;
+    text-align: center;
+}
+
+
+
+
+// Tester
+// body {
+// background-color: gold;
+// } 

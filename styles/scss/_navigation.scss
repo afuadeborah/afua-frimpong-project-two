@@ -1,0 +1,43 @@
+// Navigation
+
+// Font
+header {
+    background-color: $light-blue;
+}
+
+nav {
+
+    
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        li {
+            margin: 30px 20px;
+            
+
+
+            a {
+                
+                @include font-settings(20);
+                line-height: 29px;
+                color: $text-color;
+                text-align: center;
+                
+                
+
+            } 
+        }
+    }
+}
+
+nav a:hover {
+    color: $white;
+}
+
+.blog-header {
+    background-image: url(../)
+}

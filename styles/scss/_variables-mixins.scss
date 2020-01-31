@@ -1,0 +1,38 @@
+// Colours
+$text-color: #171717;
+$accent-color: #F38D8D;
+$mid-blue: #68B0C1;
+$light-blue: #B9DDE7;
+$dark-blue: #227284;
+$white: #F6F6F6;
+
+// Fonts
+$body-font: 'Cabin';
+$header-font: 'Oswald';
+
+
+
+
+
+
+// Mixins
+@mixin font-settings ($size-value){
+    font-size: ($size-value / 10) * 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin grow-shrink ($width){
+    flex: 1 0 $width;
+}
+
+@mixin background-image ($image){
+    background-image: $image;
+    height: 40vh;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+
