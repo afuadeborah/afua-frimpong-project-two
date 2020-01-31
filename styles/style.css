@@ -556,9 +556,9 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-pic {
@@ -571,9 +571,17 @@ button:hover {
   top: 70px;
 }
 
+.header-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .header-text img {
   position: relative;
   width: auto;
+  right: -70%;
+  top: 35%;
 }
 
 .main-wrapper .who-is-she {
@@ -589,7 +597,7 @@ button:hover {
           flex-direction: column;
   width: 50%;
   position: relative;
-  left: 45%;
+  left: 52%;
   margin-left: 50px;
 }
 
@@ -598,7 +606,7 @@ button:hover {
 }
 
 .four-square p {
-  margin-left: 35px;
+  margin-left: 45px;
 }
 
 .mid-list {
@@ -650,6 +658,11 @@ button:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.gallery {
+  padding: 60px 0;
+  background-color: white;
 }
 
 .three-pic {

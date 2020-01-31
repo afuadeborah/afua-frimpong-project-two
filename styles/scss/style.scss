@@ -120,7 +120,7 @@ button:hover {
 // Harper Main Page
 .header-center {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header-pic {
@@ -134,11 +134,15 @@ button:hover {
     }
 }
 
+.header-text {
+    align-self: center;
+}
+
 .header-text img {
     position: relative;
     width: auto;
-    // right: -70%;
-    // top: 17;
+    right: -70%;
+    top: 35%;
 }
 
 
@@ -153,7 +157,7 @@ button:hover {
         flex-direction: column;
         width: 50%;
         position: relative;
-        left: 45%;
+        left: 52%;
         margin-left: 50px;
 
         p {
@@ -167,7 +171,7 @@ button:hover {
 
 
 .four-square p{
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 .mid-list {
@@ -197,9 +201,6 @@ button:hover {
     flex: 1 0 50%;
 }
 
-// .text-container {
-//     // padding: 70px;
-// }
 
 // Her Journey
 .her-journey {
@@ -212,6 +213,11 @@ button:hover {
 .bottom-three {
     display: flex;
     justify-content: space-around;
+}
+
+.gallery {
+    padding: 60px 0;
+    background-color: white;
 }
 
 .three-pic {
