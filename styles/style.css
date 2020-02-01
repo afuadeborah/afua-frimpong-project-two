@@ -298,11 +298,6 @@ form button:hover {
   background-size: cover;
 }
 
-.blog-main p,
-.blog-main a {
-  font-size: 1.8rem;
-}
-
 .blog-main {
   margin-top: 80px;
 }
@@ -462,7 +457,7 @@ img {
 
 body {
   font-family: "Cabin";
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 32px;
   background-color: #F6F6F6;
   color: #171717;
@@ -559,6 +554,7 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .header-pic {
@@ -578,10 +574,10 @@ button:hover {
 }
 
 .header-text img {
-  position: relative;
+  position: absolute;
   width: auto;
-  right: -70%;
-  top: 35%;
+  top: 30%;
+  right: 0%;
 }
 
 .main-wrapper .who-is-she {
@@ -635,6 +631,11 @@ button:hover {
   margin-bottom: 80px;
 }
 
+.four-grid,
+.gallery {
+  background-color: white;
+}
+
 .image-container,
 .text-container {
   width: 100%;
@@ -650,6 +651,15 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.her-journey img {
+  width: 25%;
+}
+
+.her-journey .journey-text {
+  width: calc(70% - 20px);
 }
 
 .bottom-three {
@@ -662,7 +672,6 @@ button:hover {
 
 .gallery {
   padding: 60px 0;
-  background-color: white;
 }
 
 .three-pic {

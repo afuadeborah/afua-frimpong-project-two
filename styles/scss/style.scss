@@ -37,7 +37,7 @@ img {
 
 body{
     font-family: $body-font;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 32px;
     background-color: $white;
     color: $text-color;
@@ -121,6 +121,7 @@ button:hover {
 .header-center {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .header-pic {
@@ -139,10 +140,10 @@ button:hover {
 }
 
 .header-text img {
-    position: relative;
+    position: absolute;
     width: auto;
-    right: -70%;
-    top: 35%;
+    top: 30%;
+    right: 0%;
 }
 
 
@@ -192,7 +193,11 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 80px;
+}
 
+.four-grid,
+.gallery {
+    background-color: white;
 }
 
 .image-container,
@@ -206,6 +211,15 @@ button:hover {
 .her-journey {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 90px;
+
+    img {
+        width: 25%;
+    }
+
+    .journey-text {
+        width: calc(70% - 20px);
+    }
 }
 
 
@@ -217,7 +231,6 @@ button:hover {
 
 .gallery {
     padding: 60px 0;
-    background-color: white;
 }
 
 .three-pic {
