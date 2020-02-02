@@ -218,7 +218,7 @@ button:hover {
 .text-container {
     width: 100%;
     @include grow-shrink(50%);
-    
+
     &:first-of-type {
         margin-bottom: 60px;
     }
@@ -238,6 +238,15 @@ button:hover {
 .text-container:nth-of-type(3) button {
     align-self: flex-end; 
 }
+
+.image-container:first-of-type img {
+    box-shadow: 30px 20px 0px 0px $mid-blue, -150px 20px 0px 0px $mid-blue;
+}
+
+.image-container:last-of-type img {
+    box-shadow: 120px 20px 0 $light-blue;
+}
+
 
 
 // shrink image but keep width auto
@@ -290,10 +299,3 @@ button:hover {
     text-align: center;
 }
 
-
-
-
-// Tester
-// body {
-// background-color: gold;
-// } 

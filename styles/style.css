@@ -699,6 +699,16 @@ button:hover {
       align-self: flex-end;
 }
 
+.image-container:first-of-type img {
+  -webkit-box-shadow: 30px 20px 0px 0px #68B0C1, -150px 20px 0px 0px #68B0C1;
+          box-shadow: 30px 20px 0px 0px #68B0C1, -150px 20px 0px 0px #68B0C1;
+}
+
+.image-container:last-of-type img {
+  -webkit-box-shadow: 120px 20px 0 #B9DDE7;
+          box-shadow: 120px 20px 0 #B9DDE7;
+}
+
 .her-journey {
   display: -webkit-box;
   display: -ms-flexbox;
