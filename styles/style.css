@@ -494,7 +494,7 @@ h1 {
 }
 
 .header-text h1 {
-  font-size: 12rem;
+  font-size: 11rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -557,12 +557,11 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
 .header-pic {
-  width: calc(50% - 50px);
-  margin-right: 50px;
+  width: calc(50% - 60px);
+  margin-right: 60px;
 }
 
 .header-pic img {
@@ -579,8 +578,8 @@ button:hover {
 .header-text img {
   position: absolute;
   width: auto;
-  top: 30%;
-  right: 0%;
+  top: 45%;
+  right: 10%;
 }
 
 .main-wrapper .who-is-she {
@@ -671,7 +670,8 @@ button:hover {
 }
 
 .text-container {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,9 +684,25 @@ button:hover {
           justify-content: space-evenly;
 }
 
-.text-container:nth-of-type(2) button {
+.text-container h3,
+.text-container p {
+  margin-bottom: 30px;
+}
+
+.text-container:nth-of-type(2) {
+  padding-right: 0;
+  padding-left: 50px;
+}
+
+.text-container:nth-of-type(2) button,
+.text-container:nth-of-type(2) .journey-text button {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.text-container:nth-of-type(3) {
+  padding-right: 50px;
+  padding-left: 0;
 }
 
 .text-container:nth-of-type(3) button {
@@ -719,7 +735,7 @@ button:hover {
 }
 
 .her-journey img {
-  width: 25%;
+  margin-right: 45px;
   -webkit-box-shadow: 15px 15px 0px 0px #227284;
           box-shadow: 15px 15px 0px 0px #227284;
 }
@@ -735,7 +751,10 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc(65% - 20px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(70% - 45px);
+          flex: 1 0 calc(70% - 45px);
+  padding-left: 50px;
 }
 
 .her-journey .journey-text h2,
