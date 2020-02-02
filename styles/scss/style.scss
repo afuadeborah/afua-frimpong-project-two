@@ -126,6 +126,7 @@ button:hover {
 
 
     img {
+        box-shadow: 15px 15px 0px 0px white;
         position: relative;
         top: 70px;
     }
@@ -237,9 +238,8 @@ button:hover {
 .text-container:nth-of-type(2){
     padding-right: 0;
     padding-left: 50px;
-    
-        button,
-        .journey-text button {
+
+        button {
             align-self: flex-start;
         }
 }
@@ -268,9 +268,6 @@ button:hover {
 }
 
 
-
-// shrink image but keep width auto
-
 // Her Journey
 .her-journey {
     display: flex;
@@ -278,10 +275,8 @@ button:hover {
     padding: 90px 0;
 
     img {
-        // width: 25%;
         margin-right: 45px;
         box-shadow: 15px 15px 0px 0px $dark-blue;
-
     }
 
     .journey-text {
@@ -294,6 +289,10 @@ button:hover {
         h2,
         p {
             margin-bottom: 30px;
+        }
+
+        button {
+            align-self: flex-start;
         }
     }
 }
