@@ -219,9 +219,9 @@ button:hover {
     width: 100%;
     @include grow-shrink(50%);
 
-    &:first-of-type {
-        margin-bottom: 60px;
-    }
+    // &:first-of-type {
+    //     margin-bottom: 60px;
+    // }
 }
 
 .text-container {
@@ -240,11 +240,15 @@ button:hover {
 }
 
 .image-container:first-of-type img {
-    box-shadow: 30px 20px 0px 0px $mid-blue, -150px 20px 0px 0px $mid-blue;
+    box-shadow: 15px 15px 0px 0px $mid-blue, -150px 15px 0px 0px $mid-blue;
+    position: relative;
+    bottom: 10%;
 }
 
 .image-container:last-of-type img {
-    box-shadow: 120px 20px 0 $light-blue;
+    box-shadow: 120px 15px 0 $light-blue;
+    position: relative;
+    top: 10%;
 }
 
 
@@ -255,14 +259,23 @@ button:hover {
 .her-journey {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 90px;
+    padding: 90px 0;
 
     img {
         width: 25%;
+        box-shadow: 15px 15px 0px 0px $dark-blue;
     }
 
     .journey-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: calc(65% - 20px);
+
+        h2,
+        p {
+            margin-bottom: 30px;
+        }
     }
 }
 

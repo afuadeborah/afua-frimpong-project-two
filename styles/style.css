@@ -670,11 +670,6 @@ button:hover {
           flex: 1 0 50%;
 }
 
-.image-container:first-of-type,
-.text-container:first-of-type {
-  margin-bottom: 60px;
-}
-
 .text-container {
   padding: 50px 0;
   display: -webkit-box;
@@ -700,13 +695,17 @@ button:hover {
 }
 
 .image-container:first-of-type img {
-  -webkit-box-shadow: 30px 20px 0px 0px #68B0C1, -150px 20px 0px 0px #68B0C1;
-          box-shadow: 30px 20px 0px 0px #68B0C1, -150px 20px 0px 0px #68B0C1;
+  -webkit-box-shadow: 15px 15px 0px 0px #68B0C1, -150px 15px 0px 0px #68B0C1;
+          box-shadow: 15px 15px 0px 0px #68B0C1, -150px 15px 0px 0px #68B0C1;
+  position: relative;
+  bottom: 10%;
 }
 
 .image-container:last-of-type img {
-  -webkit-box-shadow: 120px 20px 0 #B9DDE7;
-          box-shadow: 120px 20px 0 #B9DDE7;
+  -webkit-box-shadow: 120px 15px 0 #B9DDE7;
+          box-shadow: 120px 15px 0 #B9DDE7;
+  position: relative;
+  top: 10%;
 }
 
 .her-journey {
@@ -716,15 +715,32 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 90px;
+  padding: 90px 0;
 }
 
 .her-journey img {
   width: 25%;
+  -webkit-box-shadow: 15px 15px 0px 0px #227284;
+          box-shadow: 15px 15px 0px 0px #227284;
 }
 
 .her-journey .journey-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: calc(65% - 20px);
+}
+
+.her-journey .journey-text h2,
+.her-journey .journey-text p {
+  margin-bottom: 30px;
 }
 
 .bottom-three {
