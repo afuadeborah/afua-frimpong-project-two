@@ -209,12 +209,12 @@ nav ul li a {
   text-align: center;
 }
 
-nav a:hover {
-  color: #F6F6F6;
+li:nth-of-type(3) {
+  margin: 30px 50px;
 }
 
-.blog-header {
-  background-image: url(../);
+nav a:hover {
+  color: #F6F6F6;
 }
 
 form {
@@ -395,18 +395,21 @@ form button:hover {
   background-size: cover;
 }
 
-.icon-container {
+.icon-container,
+.icon-circle-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-.icon-container li {
+.icon-container li,
+.icon-circle-container li {
   margin: 0 10px;
 }
 
-.icon-container :first-child {
+.icon-container :first-child,
+.icon-circle-container :first-child {
   margin-left: 0;
 }
 
@@ -535,13 +538,6 @@ button:hover {
           transform: scale(1.2);
 }
 
-.fas {
-  background-color: #B9DDE7;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
 .fab,
 .fas {
   font-size: 2.5rem;
@@ -644,6 +640,37 @@ button:hover {
           flex: 1 0 50%;
 }
 
+.text-container {
+  padding: 50px;
+}
+
+.text-container button {
+  position: relative;
+  left: 50%;
+}
+
+.icon-circle-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-circle-container .icon-circle {
+  height: 50px;
+  width: 50px;
+  background-color: #B9DDE7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
 .her-journey {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,7 +686,7 @@ button:hover {
 }
 
 .her-journey .journey-text {
-  width: calc(70% - 20px);
+  width: calc(65% - 20px);
 }
 
 .bottom-three {

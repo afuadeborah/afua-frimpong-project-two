@@ -35,7 +35,8 @@
     @include background-image(url(../harper-assets/contact-image-1.jpg))
 }
 
-.icon-container {
+.icon-container,
+.icon-circle-container {
     display: flex;
     margin-bottom: 10px;
 

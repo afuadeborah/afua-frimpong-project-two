@@ -5,39 +5,32 @@ header {
     background-color: $light-blue;
 }
 
-nav {
 
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    li {
+        margin: 30px 20px;
         
-
-        li {
-            margin: 30px 20px;
+        a {
             
-
-
-            a {
-                
-                @include font-settings(20);
-                line-height: 29px;
-                color: $text-color;
-                text-align: center;
-                
-                
-
-            } 
-        }
+            @include font-settings(20);
+            line-height: 29px;
+            color: $text-color;
+            text-align: center;
+            
+        } 
     }
+}
+
+
+li:nth-of-type(3){
+    margin: 30px 50px;
 }
 
 nav a:hover {
     color: $white;
-}
-
-.blog-header {
-    background-image: url(../)
 }

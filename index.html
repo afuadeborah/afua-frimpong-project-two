@@ -46,6 +46,7 @@
             </div>
         </div>
     </header>
+    <!-- fix the whie space around this pic -->
     <main>
         <div class="main-wrapper">
         <div class="who-is-she">
@@ -57,43 +58,51 @@
         </div>
 
         <div class="building"><img src="./harper-assets/home-image-2.jpg" alt="exterior view of pink building with blue windows"></div>
-        <!-- DONE -->
+
+
+<!-- All credit to @iandonahue on jsfiddle.net for the code in order to center font-awesome icons inside circle: http://jsfiddle.net/iandonahue/M3jxT/1409 -->
 
         <section class="wrapper under-building">
             <ul class="mid-list">
                 <li class="four-square">
-                    <div class="icon-container">
-                        <i class="fas fa-image" aria-hidden="true"></i>
-                    <h3>Photos</h3>
+                    <div class="icon-circle-container">
+                            <div class="icon-circle">
+                                <i class="fas fa-image" aria-hidden="true"></i>
+                            </div>
+                        <h3>Photos</h3>
                     </div>
-                    <!-- flex this -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quidem quis porro, harum voluptatum unde sapiente officia minima expedita praesentium.</p>
                 </li>
                 <li class="four-square">
-                    <div class="icon-container">
-                        <i class="fas fa-user" aria-hidden="true"></i>
-                    <h3>About</h3>
+                    <div class="icon-circle-container">
+                            <div class="icon-circle">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        <h3>About</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad molestiae sint illo dolores error dicta corrupti repellendus id quas.</p>
                 </li>
                 <li class="four-square">
-                    <div class="icon-container">
-                    <i class="fas fa-desktop" aria-hidden="true"></i>
-                    <h3>Blog</h3>
+                    <div class="icon-circle-container">
+                            <div class="icon-circle">
+                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                            </div>
+                        <h3>Blog</h3>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi praesentium in quod earum illo accusantium aliquam accusamus expedita nam laboriosam.</p>
                 </li>
                 <li class="four-square">
-                    <div class="icon-container">
-                    <i class="fas fa-phone" aria-hidden="true"></i>
-                    </span>
-                    <h3>Contact Me</h3>
+                    <div class="icon-circle-container">
+                            <div class="icon-circle">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                        <h3>Contact Me</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at quidem minus reiciendis maiores consequuntur sint quas beatae commodi dignissimos.</p>
                 </li>
             </ul>
         </section>
-        <!-- icons will have a background colour and border radius 50% -->
+
         <section class="four-grid">
             <div class="photo-grid wrapper">
                 <div class="image-container"><img src="./harper-assets/home-image-3.jpg" alt=""></div>
@@ -151,18 +160,3 @@
 </body>
 </html>
 
-<!-- h1: Blog, Contact Me, Harper -->
-<!-- h2: Who's Harper, Harper's Journey, Travel Destinations -->
-<!-- h3: 4 Square, Image/Grid,-->
-<!-- h4: About Harper, Recent Posts -->
-<!-- nav -->
-<!-- .foo {
-display: block;
-overflow: hidden;
-padding: 0 1em;
-} -->
-<!-- To add a unit to a number, you have to multiply this number by 1 unit. -->
-    <!-- $value: 42;
-    
-    // Yep
-    $length: $value * 1px; -->
