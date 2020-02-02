@@ -290,6 +290,47 @@ form button:hover {
   border: 1px solid #171717;
 }
 
+@media (max-width: 1030px) {
+  .personal-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .personal-info input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  nav li:nth-of-type(3) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .contact-main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form,
+  .side-bar-container .side-bar {
+    min-width: 100%;
+  }
+  .side-bar {
+    text-align: center;
+  }
+  .icon-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icon-container i:hover {
+    color: black;
+  }
+}
+
 .blog-background {
   background-image: url(../harper-assets/blog-image-1.jpg);
   height: 40vh;
@@ -310,6 +351,10 @@ form button:hover {
 
 .flex-wrapper .sidebar-container {
   margin-top: 0;
+}
+
+.side-bar img {
+  margin-bottom: 20px;
 }
 
 .recent-posts {
@@ -558,6 +603,10 @@ button:hover {
 .fab,
 .fas {
   font-size: 2.5rem;
+}
+
+li .fa-bars {
+  display: none;
 }
 
 .header-center {

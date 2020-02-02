@@ -31,6 +31,7 @@ input {
     height: 70px;
     width: calc(50% - 10px);
     flex: 1 1 50%;
+
 }
 
 input:first-of-type{
@@ -51,3 +52,44 @@ form button:hover {
 
 // textarea will need to shrink to be responsive
 
+// Media Queries
+@media (max-width: 1030px){
+
+    .personal-info {
+        flex-direction: column;
+        
+        input {
+            width: 100%;
+        }
+    }
+}
+
+// Tablets
+@media (max-width: 780px) {
+
+    nav li:nth-of-type(3) {
+        order: -1;
+    }
+
+    .contact-main .wrapper {
+    flex-direction: column;
+    }
+
+    form,
+    .side-bar-container .side-bar {
+        min-width: 100%
+    }
+
+    .side-bar {
+        text-align: center
+    }
+    
+    .icon-container {
+    justify-content: center;
+    }
+
+    .icon-container i:hover {
+    color: black;
+
+    }
+}

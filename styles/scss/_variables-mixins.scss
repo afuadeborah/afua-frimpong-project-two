@@ -35,4 +35,22 @@ $header-font: 'Oswald';
     background-size: cover;
 }
 
+@mixin mq-large-screen {
+    @media (max-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin mq-tablet {
+    @media (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin mq-phone {
+    @media (max-width: 460px) {
+        @content;
+    }
+}
+
 
