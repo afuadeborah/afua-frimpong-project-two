@@ -66,3 +66,41 @@ span {
     width: auto;
     height: auto;
 }
+
+// Media Queries
+
+@media (max-width: 1050px) {
+
+    .blog-wrapper form {
+    max-width: 80%;
+    }
+
+    .flex-wrapper {
+    flex-direction: column
+    }
+
+    .blog-wrapper form {
+    max-width: 90%;
+    margin: 20px auto;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 780px) {
+
+
+    .recent-posts span{
+    display: none
+    }
+
+    .sticky {
+    text-align: center;
+    top: 255px; 
+    }
+    
+    }

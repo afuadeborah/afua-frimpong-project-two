@@ -290,7 +290,7 @@ form button:hover {
   border: 1px solid #171717;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1050px) {
   .personal-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -315,10 +315,12 @@ form button:hover {
             flex-direction: column;
   }
   form,
-  .side-bar-container .side-bar {
+  .side-bar-container .side-bar,
+  .recent-posts {
     min-width: 100%;
   }
-  .side-bar {
+  .side-bar,
+  .recent-posts {
     text-align: center;
   }
   .icon-container {
@@ -405,6 +407,32 @@ span {
 .blog-wrapper form {
   width: auto;
   height: auto;
+}
+
+@media (max-width: 1050px) {
+  .blog-wrapper form {
+    max-width: 80%;
+  }
+  .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-wrapper form {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .recent-posts span {
+    display: none;
+  }
+  .sticky {
+    text-align: center;
+    top: 255px;
+  }
 }
 
 .side-bar,

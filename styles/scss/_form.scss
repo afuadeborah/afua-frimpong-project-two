@@ -53,7 +53,7 @@ form button:hover {
 // textarea will need to shrink to be responsive
 
 // Media Queries
-@media (max-width: 1030px){
+@media (max-width: 1050px){
 
     .personal-info {
         flex-direction: column;
@@ -76,11 +76,13 @@ form button:hover {
     }
 
     form,
-    .side-bar-container .side-bar {
+    .side-bar-container .side-bar,
+    .recent-posts {
         min-width: 100%
     }
 
-    .side-bar {
+    .side-bar,
+    .recent-posts {
         text-align: center
     }
     
