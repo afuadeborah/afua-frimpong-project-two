@@ -21,31 +21,35 @@
     margin-top: 10px;
 }
 
+span {
+    margin-right: 10px;
+}
 
 //  Main Blog 
-
-.blog-wrapper {
-    background-color: white;
-}
-
-.flex-wrapper .sidebar-container {
-    margin-top: 0;
-}
-
-
 .right-container {
     margin-top: 40px;
     flex: 1 0 60%;
 }
 
+.blog-post p {
+    margin: 15px 0;
+    line-height: 30px;
+}
+
 .blog-post,
 .single-post {
     padding: 25px;
+    background-color: white;
 }
 
 .single-post {
     display: flex;
     margin: 20px 0;
+
+    .single-post-text {
+        flex: 1 0 calc(80% - 20px);
+        margin-left: 20px;
+    }
 
     img {
         width: 100px;
@@ -56,4 +60,5 @@
 // Form
 .blog-wrapper form {
     width: auto;
+    height: auto;
 }

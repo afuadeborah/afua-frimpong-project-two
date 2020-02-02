@@ -316,12 +316,8 @@ form button:hover {
   margin-top: 10px;
 }
 
-.blog-wrapper {
-  background-color: white;
-}
-
-.flex-wrapper .sidebar-container {
-  margin-top: 0;
+span {
+  margin-right: 10px;
 }
 
 .right-container {
@@ -331,9 +327,15 @@ form button:hover {
           flex: 1 0 60%;
 }
 
+.blog-post p {
+  margin: 15px 0;
+  line-height: 30px;
+}
+
 .blog-post,
 .single-post {
   padding: 25px;
+  background-color: white;
 }
 
 .single-post {
@@ -343,6 +345,13 @@ form button:hover {
   margin: 20px 0;
 }
 
+.single-post .single-post-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(80% - 20px);
+          flex: 1 0 calc(80% - 20px);
+  margin-left: 20px;
+}
+
 .single-post img {
   width: 100px;
   height: 100px;
@@ -350,6 +359,7 @@ form button:hover {
 
 .blog-wrapper form {
   width: auto;
+  height: auto;
 }
 
 .side-bar,
