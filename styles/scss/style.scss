@@ -211,7 +211,7 @@ li .fa-bars {
 .photo-grid {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
 }
 
 .four-grid,
@@ -226,15 +226,15 @@ li .fa-bars {
 }
 
 .text-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    // padding-top: 50px;
+    // padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 
     h3,
     p {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
 }
@@ -253,7 +253,7 @@ li .fa-bars {
     padding-right: 50px;
     padding-left: 0;
 
-        button{
+        button {
         align-self: flex-end; 
     }
 }
@@ -273,10 +273,14 @@ li .fa-bars {
 
 
 // Her Journey
+.harpers-journey {
+    padding: 90px 0;
+}
+
 .her-journey {
     display: flex;
     justify-content: space-between;
-    padding: 90px 0;
+    padding: 70px 0;
 
     img {
         margin-right: 45px;
@@ -328,4 +332,92 @@ li .fa-bars {
 
 
 // Media Queries
+@media (max-width: 1050px) {
 
+// Header
+
+    .header-text h1{
+        font-size: 9rem;
+    }
+
+    .header-text img {
+        top: 55%;
+        right: 12%;
+        width: 11%;
+    }
+
+// Who Is She 
+    .main-wrapper .who-is-she {
+        margin-left: 0;
+    }
+
+// Pic & Image Grid
+    .four-grid {
+        padding: 50px;
+    }
+
+    .image-container:first-of-type img {
+        bottom: 30%;
+    }
+
+    .image-container:last-of-type img {
+        top: 30%;
+    }
+
+    .text-container {
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+// Harper's Journey
+.harpers-journey {
+    padding: 60px 0;
+}
+
+// Blog
+.side-bar-container {
+    align-items: center;
+    .side-bar, 
+    .recent-posts {
+        min-width: 90%;
+        text-align: center;
+    } 
+}
+}
+
+@media (max-width: 780px) {
+
+// Header
+    .header-text img {
+        display: none;
+    }
+
+// Icon Grid
+.mid-list,
+.photo-grid {
+    flex-direction: column;
+}
+
+// Pic & Image 
+.image-container img {
+    position: static;
+}
+.four-grid {
+    padding: 0;
+}
+
+.text-container:nth-of-type(2),
+.text-container:nth-of-type(3){
+    margin: 0;
+    padding: 40px 0;
+}
+
+
+
+}

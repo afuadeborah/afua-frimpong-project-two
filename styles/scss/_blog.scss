@@ -71,18 +71,23 @@ span {
 
 @media (max-width: 1050px) {
 
-    .blog-wrapper form {
-    max-width: 80%;
+    .side-bar-container {
+        display: flex;
     }
 
-    .flex-wrapper {
-    flex-direction: column
+
+    .flex-wrapper,
+    .side-bar-container {
+
+        flex-direction: column;
+        }
     }
 
     .blog-wrapper form {
     max-width: 90%;
     margin: 20px auto;
     }
+
 
 }
 
@@ -92,8 +97,6 @@ span {
 
 
 @media (max-width: 780px) {
-
-
     .recent-posts span{
     display: none
     }

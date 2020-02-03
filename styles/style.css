@@ -410,10 +410,16 @@ span {
 }
 
 @media (max-width: 1050px) {
-  .blog-wrapper form {
-    max-width: 80%;
-  }
   .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-wrapper .side-bar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -742,7 +748,6 @@ li .fa-bars {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 80px;
 }
 
 .four-grid,
@@ -759,8 +764,6 @@ li .fa-bars {
 }
 
 .text-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,14 +771,14 @@ li .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text-container h3,
 .text-container p {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .text-container:nth-of-type(2) {
@@ -812,6 +815,10 @@ li .fa-bars {
   top: 10%;
 }
 
+.harpers-journey {
+  padding: 90px 0;
+}
+
 .her-journey {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,7 +826,7 @@ li .fa-bars {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 90px 0;
+  padding: 70px 0;
 }
 
 .her-journey img {
@@ -879,4 +886,70 @@ li .fa-bars {
   background-color: #171717;
   color: #F6F6F6;
   text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .header-text h1 {
+    font-size: 9rem;
+  }
+  .header-text img {
+    top: 55%;
+    right: 12%;
+    width: 11%;
+  }
+  .main-wrapper .who-is-she {
+    margin-left: 0;
+  }
+  .four-grid {
+    padding: 50px;
+  }
+  .image-container:first-of-type img {
+    bottom: 30%;
+  }
+  .image-container:last-of-type img {
+    top: 30%;
+  }
+  .text-container h3 {
+    font-size: 3rem;
+  }
+  .text-container p {
+    font-size: 1.7rem;
+  }
+  .harpers-journey {
+    padding: 60px 0;
+  }
+  .side-bar-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .side-bar-container .side-bar,
+  .side-bar-container .recent-posts {
+    min-width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-text img {
+    display: none;
+  }
+  .mid-list,
+  .photo-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .image-container img {
+    position: static;
+  }
+  .four-grid {
+    padding: 0;
+  }
+  .text-container:nth-of-type(2),
+  .text-container:nth-of-type(3) {
+    margin: 0;
+    padding: 40px 0;
+  }
 }
