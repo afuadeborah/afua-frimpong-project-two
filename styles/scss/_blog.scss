@@ -6,7 +6,8 @@
     margin-top: 80px;
 }
 
-.flex-wrapper {
+.flex-wrapper,
+.single-post {
     display: flex;
 }
 
@@ -51,11 +52,10 @@ span {
 }
 
 .single-post {
-    display: flex;
     margin: 20px 0;
 
     .single-post-text {
-        flex: 1 0 calc(80% - 20px);
+        @include grow-shrink(calc(80% - 20px))
         margin-left: 20px;
         &p:first-child {
             font-weight: bold;

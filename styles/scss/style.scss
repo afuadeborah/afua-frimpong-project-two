@@ -104,7 +104,7 @@ button {
 }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .fab,
@@ -125,7 +125,7 @@ li .fa-bars {
 }
 
 .header-pic {
-    flex: 1 0 calc(50% - 60px);
+    @include grow-shrink(calc(50% - 60px));
     margin-right: 60px;
 
 
@@ -227,8 +227,6 @@ li .fa-bars {
 }
 
 .text-container {
-    // padding-top: 50px;
-    // padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,7 +382,7 @@ li .fa-bars {
 
 .her-journey img {
     height: auto;
-    flex: 1 0 calc(50% - 50px);
+    @include grow-shrink(calc(50% - 50px));
     margin-right: 0;
 }
 
@@ -522,7 +520,7 @@ li .fa-bars {
         font-size: 3.5rem;
     }
     
-    // Gallery 
+// Gallery 
     .three-pic:last-of-type {
         display: none;
     }
@@ -538,5 +536,7 @@ li .fa-bars {
         }
     }
 }
+
+// 2:12am: not the most dry code, would like feedback from project 1 + still getting comfortable with the compiler! Any feedback is appreciated!
 
 

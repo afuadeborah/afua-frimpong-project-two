@@ -388,7 +388,8 @@ form button:hover {
   margin-top: 80px;
 }
 
-.flex-wrapper {
+.flex-wrapper,
+.single-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,9 +435,6 @@ span {
 }
 
 .single-post {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 20px 0;
 }
 
@@ -702,8 +700,8 @@ button a {
 }
 
 button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .fab,
