@@ -364,6 +364,12 @@ form button:hover {
   }
 }
 
+@media (max-width: 480px) {
+  .contact-main .side-bar {
+    margin-top: 60px;
+  }
+}
+
 .blog-background {
   background-image: url(../harper-assets/blog-image-1.jpg);
   height: 40vh;
@@ -405,6 +411,11 @@ span {
           flex: 1 0 60%;
 }
 
+.blog-post,
+.single-post:last-child {
+  border-bottom: 5px solid #227284;
+}
+
 .blog-post p {
   margin: 15px 0;
   line-height: 30px;
@@ -430,6 +441,10 @@ span {
   margin-left: 20px;
 }
 
+.single-post .single-post-textp:first-child {
+  font-weight: bold;
+}
+
 .single-post img {
   width: 100px;
   height: 100px;
@@ -445,6 +460,10 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .side-bar,
+  .recent-posts {
+    min-width: 100%;
   }
   .flex-wrapper,
   .side-bar-container {
@@ -463,9 +482,28 @@ span {
   .recent-posts span {
     display: none;
   }
+  .side-bar-container .side-bar,
+  .side-bar-container .recent-posts {
+    min-width: 100%;
+  }
   .sticky {
     text-align: center;
     top: 255px;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single-post .single-post-text {
+    margin-left: 0;
+  }
+  h4 {
+    font-size: 2rem;
   }
 }
 
@@ -681,7 +719,9 @@ li .fa-bars {
 }
 
 .header-pic {
-  width: calc(50% - 60px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 60px);
+          flex: 1 0 calc(50% - 60px);
   margin-right: 60px;
 }
 
@@ -701,8 +741,8 @@ li .fa-bars {
 .header-text img {
   position: absolute;
   width: auto;
-  top: 45%;
-  right: 10%;
+  top: 63%;
+  right: 6%;
 }
 
 .main-wrapper .who-is-she {
@@ -921,9 +961,9 @@ li .fa-bars {
     font-size: 9rem;
   }
   .header-text img {
-    top: 55%;
-    right: 12%;
-    width: 11%;
+    top: 53%;
+    right: 5%;
+    width: 15%;
   }
   .main-wrapper .who-is-she {
     margin-left: 0;
@@ -968,6 +1008,12 @@ li .fa-bars {
 @media (max-width: 780px) {
   .header-text img {
     display: none;
+  }
+  .header-text h1 {
+    font-size: calc(7rem - 0.5vw);
+  }
+  .header-pic img {
+    position: static;
   }
   .main-wrapper .who-is-she {
     text-align: center;
@@ -1023,5 +1069,67 @@ li .fa-bars {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .side-bar-container .side-bar,
+  .side-bar-container .recent-posts {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-center .header-pic {
+    margin-right: 0;
+  }
+  .header-center .header-pic img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .header-text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .icon-circle-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .four-square p {
+    text-align: center;
+    margin-left: 0;
+  }
+  .text-container {
+    text-align: center;
+  }
+  .text-container:nth-of-type(2) button,
+  .text-container:nth-of-type(3) button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .her-journey h2 {
+    font-size: 3.5rem;
+  }
+  .three-pic:last-of-type {
+    display: none;
+  }
+  .gallery {
+    padding: 0;
+  }
+  .gallery .photo-wrapper {
+    width: 100%;
+  }
+  .gallery .three-pic {
+    margin: 0;
+    width: 50%;
   }
 }

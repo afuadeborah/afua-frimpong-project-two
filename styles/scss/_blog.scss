@@ -34,6 +34,10 @@ span {
     margin-top: 40px;
     flex: 1 0 60%;
 }
+.blog-post,
+.single-post:last-child {
+    border-bottom: 5px solid $dark-blue;
+}
 
 .blog-post p {
     margin: 15px 0;
@@ -53,6 +57,9 @@ span {
     .single-post-text {
         flex: 1 0 calc(80% - 20px);
         margin-left: 20px;
+        &p:first-child {
+            font-weight: bold;
+        }
     }
 
     img {
@@ -74,7 +81,11 @@ span {
     .side-bar-container {
         display: flex;
     }
-
+    
+    .side-bar,
+    .recent-posts {
+        min-width: 100%;
+    }
 
     .flex-wrapper,
     .side-bar-container {
@@ -101,9 +112,31 @@ span {
     display: none
     }
 
+    .side-bar-container .side-bar,
+    .side-bar-container .recent-posts {
+    min-width: 100%;
+    }
+
     .sticky {
     text-align: center;
     top: 255px; 
     }
     
+}
+
+
+@media (max-width: 480px){
+.single-post {
+    flex-direction: column;
+
+    .single-post-text {
+        margin-left: 0;
     }
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+
+}
