@@ -11,7 +11,6 @@ nav ul{
     justify-content: center;
     align-items: center;
     
-
     li {
         margin: 30px 20px;
         
@@ -26,13 +25,55 @@ nav ul{
     }
 }
 
-
 nav li:nth-of-type(3){
     margin: 30px 50px;
 }
 
-nav a:hover {
+nav li:nth-of-type(6){
+    position: relative;
+}
+
+nav a:hover,
+nav p:hover {
     color: $white;
 }
+
+.sub-menu {
+    display: none;
+    background: $mid-blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+
+
+
+
+
+@media (max-width: 780px){
+    nav ul{
+        justify-content: flex-end;
+        
+        li a,
+        li p {
+            display: none;
+        }
+    }
+
+    .nav-menu li .fa-bars {
+            display: block;
+            margin-right: 100px;
+        }
+
+    li .fa-bars:hover {
+        color: white;
+    }
+
+    .nav-menu li:nth-of-type(6):hover ul.sub-menu {
+        display: block;
+    }
+}
+
 
 

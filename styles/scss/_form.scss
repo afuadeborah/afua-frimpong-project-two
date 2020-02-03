@@ -67,10 +67,6 @@ form button:hover {
 // Tablets
 @media (max-width: 780px) {
 
-    nav li:nth-of-type(3) {
-        order: -1;
-    }
-
     .contact-main .wrapper {
     flex-direction: column;
     }

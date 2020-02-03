@@ -380,6 +380,12 @@ li .fa-bars {
     padding: 60px 0;
 }
 
+.her-journey img {
+    height: auto;
+    flex: 1 0 calc(50% - 50px);
+    margin-right: 0;
+}
+
 // Blog
 .side-bar-container {
     align-items: center;
@@ -398,26 +404,64 @@ li .fa-bars {
         display: none;
     }
 
+// Who Is She
+    .main-wrapper .who-is-she {
+        text-align: center;
+        position: static;
+        width: 100%;
+        align-items: center;
+    }
+
 // Icon Grid
-.mid-list,
-.photo-grid {
-    flex-direction: column;
-}
+    .mid-list,
+    .photo-grid {
+        flex-direction: column;
+    }
 
 // Pic & Image 
-.image-container img {
-    position: static;
-}
-.four-grid {
+    .image-container img {
+        position: static;
+    }
+    .four-grid {
+        padding: 0;
+    }
+
+    .text-container:nth-of-type(2),
+    .text-container:nth-of-type(3){
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .text-container:nth-of-type(3) button {
+        align-self: flex-start;
+    }
+    
+    .text-container {
+        border-top: 2px solid $text-color;
+    }
+
+// Harper's Journey 
+.her-journey {
+    flex-direction: column;
+    align-items: center;
+
+
+    img {
+    // height: auto;
+    width: 50vh;
+    }
+
+    .journey-text {
+    text-align: center;
     padding: 0;
+    margin-top: 50px;
+
+        button {
+            align-self: center;
+        }
+    }
+
+    }
 }
 
-.text-container:nth-of-type(2),
-.text-container:nth-of-type(3){
-    margin: 0;
-    padding: 40px 0;
-}
 
-
-
-}

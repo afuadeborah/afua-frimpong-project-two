@@ -213,8 +213,44 @@ nav li:nth-of-type(3) {
   margin: 30px 50px;
 }
 
-nav a:hover {
+nav li:nth-of-type(6) {
+  position: relative;
+}
+
+nav a:hover,
+nav p:hover {
   color: #F6F6F6;
+}
+
+.sub-menu {
+  display: none;
+  background: #68B0C1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+
+@media (max-width: 780px) {
+  nav ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav ul li a,
+  nav ul li p {
+    display: none;
+  }
+  .nav-menu li .fa-bars {
+    display: block;
+    margin-right: 100px;
+  }
+  li .fa-bars:hover {
+    color: white;
+  }
+  .nav-menu li:nth-of-type(6):hover ul.sub-menu {
+    display: block;
+  }
 }
 
 form {
@@ -303,11 +339,6 @@ form button:hover {
 }
 
 @media (max-width: 780px) {
-  nav li:nth-of-type(3) {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
   .contact-main .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -410,16 +441,13 @@ span {
 }
 
 @media (max-width: 1050px) {
-  .flex-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .flex-wrapper .side-bar-container {
+  .side-bar-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .flex-wrapper,
+  .side-bar-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -918,6 +946,13 @@ li .fa-bars {
   .harpers-journey {
     padding: 60px 0;
   }
+  .her-journey img {
+    height: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 50px);
+            flex: 1 0 calc(50% - 50px);
+    margin-right: 0;
+  }
   .side-bar-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -933,6 +968,14 @@ li .fa-bars {
 @media (max-width: 780px) {
   .header-text img {
     display: none;
+  }
+  .main-wrapper .who-is-she {
+    text-align: center;
+    position: static;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mid-list,
   .photo-grid {
@@ -951,5 +994,34 @@ li .fa-bars {
   .text-container:nth-of-type(3) {
     margin: 0;
     padding: 40px 0;
+  }
+  .text-container:nth-of-type(3) button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .text-container {
+    border-top: 2px solid #171717;
+  }
+  .her-journey {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .her-journey img {
+    width: 50vh;
+  }
+  .her-journey .journey-text {
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .her-journey .journey-text button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
