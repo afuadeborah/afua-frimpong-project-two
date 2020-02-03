@@ -213,7 +213,7 @@ nav li:nth-of-type(3) {
   margin: 30px 50px;
 }
 
-nav li:nth-of-type(6) {
+nav li {
   position: relative;
 }
 
@@ -245,10 +245,10 @@ nav p:hover {
     display: block;
     margin-right: 100px;
   }
-  li .fa-bars:hover {
+  .nav-menu li .fa-bars:hover {
     color: white;
   }
-  .nav-menu li:nth-of-type(6):hover ul.sub-menu {
+  .nav-menu li:hover ul.sub-menu {
     display: block;
   }
 }
@@ -361,6 +361,12 @@ form button:hover {
   }
   .icon-container i:hover {
     color: black;
+  }
+}
+
+@media (max-width: 510px) {
+  .contact-background .sticky {
+    font-size: 7.5rem;
   }
 }
 

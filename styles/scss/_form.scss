@@ -92,6 +92,12 @@ form button:hover {
     }
 }
 
+@media (max-width: 510px){
+    .contact-background .sticky {
+        font-size: 7.5rem;
+    }
+}
+
 @media (max-width: 480px){
     
     .contact-main .side-bar {

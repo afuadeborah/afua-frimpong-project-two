@@ -14,16 +14,12 @@
         <nav class="top-bar">
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-
                 <li><a href="#about">About</a></li>
-
-                <li><p class="menu-text">Harper</p>
-                </li>
-
+                <li><p class="menu-text">Harper</p></li>
                 <li><a href="#blog">Blog</a></li>
-
                 <li><a href="#contact">Contact</a></li>
                 <li><i class="fas fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Menu</span>
                     <ul class="sub-menu">
                         <li><a href="#about">About</a></li>
                         <li><a href="#blog">Blog</a></li>
@@ -44,18 +40,16 @@
             </div>
         </div>
     </header>
-    <!-- fix the white space around this pic -->
     <main>
         <div class="main-wrapper">
-        <div class="who-is-she">
-            <h2>Who's Harper?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto id dolore consectetur pariatur cupiditate ratione impedit! Harum, ab error.</p>
-            <button><a href="#about">Find Out More</a></button>
-            <!-- use the position relative 50% here -->
-        </div>
+            <div class="who-is-she">
+                <h2>Who's Harper?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto id dolore consectetur pariatur cupiditate ratione impedit! Harum, ab error.</p>
+                <button><a href="#about">Find Out More</a></button>
+            </div>
         </div>
 
-        <div class="building"><img src="./harper-assets/home-image-2.jpg" alt="exterior view of pink building with blue windows"></div>
+        <div><img src="./harper-assets/home-image-2.jpg" alt="exterior view of pink building with blue windows"></div>
 
 
 <!-- All credit to @iandonahue on jsfiddle.net for the code in order to center font-awesome icons inside circle: http://jsfiddle.net/iandonahue/M3jxT/1409 -->
@@ -64,36 +58,39 @@
             <ul class="mid-list">
                 <li class="four-square">
                     <div class="icon-circle-container">
-                            <div class="icon-circle">
-                                <i class="fas fa-image" aria-hidden="true"></i>
-                            </div>
-                        <h3>Photos</h3>
+                        <div class="icon-circle">
+                            <i class="fas fa-image" aria-hidden="true"></i>
+                            <span class="sr-only">Harper Photos</span>
+                        </div>
+                            <h3>Photos</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quidem quis porro, harum voluptatum unde sapiente officia minima expedita praesentium.</p>
                 </li>
                 <li class="four-square">
                     <div class="icon-circle-container">
-                            <div class="icon-circle">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                            </div>
+                        <div class="icon-circle">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                        <span class="sr-only">About Harper</span>
+                        </div>
                         <h3>About</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad molestiae sint illo dolores error dicta corrupti repellendus id quas.</p>
                 </li>
                 <li class="four-square">
                     <div class="icon-circle-container">
-                            <div class="icon-circle">
-                                <i class="fas fa-desktop" aria-hidden="true"></i>
-                            </div>
+                        <div class="icon-circle">
+                            <i class="fas fa-desktop" aria-hidden="true"></i>
+                            <span class="sr-only">Harper Blog</span>
+                        </div>
                         <h3>Blog</h3>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi praesentium in quod earum illo accusantium aliquam accusamus expedita nam laboriosam.</p>
                 </li>
                 <li class="four-square">
                     <div class="icon-circle-container">
-                            <div class="icon-circle">
-                            <i class="fas fa-phone" aria-hidden="true"></i>
-                            </div>
+                        <div class="icon-circle">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
                         <h3>Contact Me</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at quidem minus reiciendis maiores consequuntur sint quas beatae commodi dignissimos.</p>
@@ -103,12 +100,12 @@
 
         <section class="four-grid">
             <div class="photo-grid wrapper">
-                <div class="image-container"><img src="./harper-assets/home-image-3.jpg" alt=""></div>
+                <div class="image-container"><img src="./harper-assets/home-image-3.jpg" alt="silhouettes of 2 guys surfing some gnarly waves at sunset against a pink sky"></div>
 
                 <div class="text-container">
-                <h3>Harper's Travels</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita excepturi autem consequuntur. Doloremque asperiores distinctio facilis aperiam animi! Qui temporibus ipsa omnis totam iure?</p>
-                <button><a href="#blog">Read More</a></button>
+                    <h3>Harper's Travels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita excepturi autem consequuntur. Doloremque asperiores distinctio facilis aperiam animi! Qui temporibus ipsa omnis totam iure?</p>
+                    <button><a href="#blog">Read More</a></button>
                 </div>
             
                 <div class="text-container">
@@ -133,24 +130,22 @@
                 </div>
             </div>
         </section>
-        <!-- set width using flex:grow/shrink -->
         
         <section class="gallery">
             <div class="photo-wrapper">
                 <div class="bottom-three">
                     <div class="three-pic">
-                    <img src="./harper-assets/home-image-6.jpg" alt="pink building on a sunny day with a clear blue sky in the background">
+                        <img src="./harper-assets/home-image-6.jpg" alt="pink building on a sunny day with a clear blue sky in the background">
                     </div>
                     <div class="three-pic">
-                    <img src="./harper-assets/home-image-7.jpg" alt="airplane flying among pink and blue clouds">
+                        <img src="./harper-assets/home-image-7.jpg" alt="airplane flying among pink and blue clouds">
                     </div>
                     <div class="three-pic">
-                    <img src="./harper-assets/home-image-8.jpg" alt="dark pink clouds">
+                        <img src="./harper-assets/home-image-8.jpg" alt="dark pink clouds">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- DONE -->
     </main>
     <footer>
         <p class="bottom">Copyright© 2020 Juno</p>
