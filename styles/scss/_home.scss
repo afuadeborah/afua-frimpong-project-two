@@ -1,0 +1,218 @@
+// Harper Main Page
+.header-center {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.header-pic {
+    @include grow-shrink(calc(40% - 60px));
+    margin-right: 60px;
+
+
+    img {
+        box-shadow: 15px 15px 0px 0px white;
+        position: relative;
+        top: 70px;
+    }
+}
+
+.header-text {
+    align-self: center;
+    display: flex;
+
+    img {
+        width: calc(15vw + 1px);
+        min-width: 80px;
+        position: relative;
+        right: calc(10vw + 1px);
+        bottom: calc(12vh + 1px);
+        // width: calc(11vw + 2px);
+        // min-width: 80px;
+        // position: relative;
+        // right: calc(10vw + 1.5px);
+        // bottom: calc(5vh + 1.5px);
+    }
+}
+
+
+// Who Is She
+.main-wrapper {
+    
+    .who-is-she {
+        padding: 60px 0;
+        margin: 80px 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: relative;
+        left: 52%;
+        margin-left: 50px;
+
+        p {
+            margin: 30px 0;
+        }
+    }
+}
+
+
+
+
+// Four Icons & Text
+.four-square p{
+    margin-left: 60px;
+}
+
+.mid-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+    li {
+        width: 100%;
+        flex: 1 0 calc(50% - 20px);
+        margin: 50px 0;
+    }
+}
+
+.icon-circle-container {
+    align-items: center;
+
+    .icon-circle {
+        height: 50px;
+        width: 50px;
+        background-color: $light-blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        margin-right: 15px;
+    }
+    
+}
+// All credit to @iandonahue on jsfiddle.net for the code in order to center font-awesome icons inside circle: http://jsfiddle.net/iandonahue/M3jxT/1409
+
+
+// Text & Pic Grid 
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.four-grid,
+.gallery {
+    background-color: white;
+}
+
+.image-container,
+.text-container {
+    width: 100%;
+    @include grow-shrink(50%);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3,
+    p {
+        margin-bottom: 15px;
+    }
+
+}
+
+.text-container:nth-of-type(2){
+    padding-right: 0;
+    padding-left: 50px;
+
+        button {
+            align-self: flex-start;
+        }
+}
+
+
+.text-container:nth-of-type(3) {
+    padding-right: 50px;
+    padding-left: 0;
+
+        button {
+        align-self: flex-end; 
+    }
+}
+
+
+.image-container:first-of-type img {
+    box-shadow: 15px 15px 0px 0px $mid-blue, -150px 15px 0px 0px $mid-blue;
+    position: relative;
+    bottom: 10%;
+}
+
+.image-container:last-of-type img {
+    box-shadow: 120px 15px 0 $light-blue;
+    position: relative;
+    top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+// Her Journey
+.harpers-journey {
+    padding: 90px 0;
+}
+
+.her-journey {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+
+    img {
+        margin-right: 45px;
+        box-shadow: 15px 15px 0px 0px $dark-blue;
+    }
+
+    .journey-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 0 calc(70% - 45px);
+        padding-left: 50px;
+
+        h2,
+        p {
+            margin-bottom: 30px;
+        }
+
+        button {
+            align-self: flex-start;
+        }
+    }
+}
+
+
+// 3 Pic Grid
+.bottom-three {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery {
+    padding: 60px 0;
+}
+
+.three-pic {
+    margin: 30px 10px;
+    width: calc(33% - 30px);  
+    @include grow-shrink(33%);
+}

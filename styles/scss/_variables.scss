@@ -12,9 +12,6 @@ $header-font: 'Oswald';
 
 
 
-
-
-
 // Mixins
 @mixin font-settings ($size-value){
     font-size: ($size-value / 10) * 1rem;
@@ -33,6 +30,26 @@ $header-font: 'Oswald';
     background-position: center;
     background-repeat: none;
     background-size: cover;
+}
+
+// Media Queries
+@mixin desktop {
+    @media (max-width: 1050px){
+        @content;
+    }
+}
+
+
+@mixin mobile-tablet {
+    @media (max-width: 795px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 500px){
+        @content;
+    }
 }
 
 

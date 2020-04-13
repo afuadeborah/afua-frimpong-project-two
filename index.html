@@ -5,38 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harper | Home</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./harper-assets/favicon_io /apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./harper-assets/favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./harper-assets/favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="./harper-assets/favicon_io /site.webmanifest">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header class="main-header">
         <nav class="top-bar">
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><p class="menu-text">Harper</p></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><i class="fas fa-bars" aria-hidden="true" title="Menu" ></i>
-                    <span class="sr-only">Menu</span>
-                    <ul class="sub-menu">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <li>
+                    <a href="./index.html">Home</a>
                 </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <p class="menu-text">Harper</p>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+
             </ul>
+
+            <div tabindex="0" class="hamburger">
+                <label class="visually-hidden" for="ham-check">Open menu</label>
+                
+                <input type="checkbox" name="hamburger" id="ham-check" class="ham-input">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul class="hamburger-menu" id="ham">
+                    <li tabindex="0" class="ham-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li tabindex="0" class="ham-link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li tabindex="0" class="ham-link">
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li tabindex="0" class="ham-link">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
         </nav>
 
-        <div class="wrapper header-center">
-            <div class="header-pic">
-            <img src="./harper-assets/home-image-1.jpg" alt="young girl lying among blue and pink ballons">
-            </div>
+        <div class="wrapper">
+            <div class="header-center">
+                <div class="header-pic">
+                <img src="./harper-assets/home-image-1.jpg" alt="young girl lying among blue and pink ballons">
+                </div>
 
-            <div class="header-text">
-                <img src="./harper-assets/circle-text.png" alt="">
-                <h1>Harper</h1>
+                <div class="header-text">
+                    <h1>Harper</h1>
+                    <img src="./harper-assets/circle-text.png" alt="">
+                </div>
             </div>
         </div>
     </header>
@@ -148,7 +187,7 @@
         </section>
     </main>
     <footer>
-        <p class="bottom">Copyright© 2020 Juno</p>
+        <p>Copyright© Afua Deborah 2020 Juno College</p>
     </footer>
 </body>
 </html>

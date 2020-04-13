@@ -1,18 +1,24 @@
 // Navigation
 
-// Font
 header {
     background-color: $light-blue;
 }
 
 
-nav ul{
+.nav-menu {
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
     
     li {
-        margin: 30px 20px;
+        margin: 20px;
+
+        &:nth-of-type(3) {
+            margin: 0 40px;
+        }
         
         a {
             
@@ -20,62 +26,25 @@ nav ul{
             line-height: 29px;
             color: $text-color;
             text-align: center;
+
+            &:hover {
+                color: $white;
+            }
             
         } 
     }
+   
 }
 
-nav li:nth-of-type(3){
-    margin: 30px 50px;
-}
 
-nav li {
-    position: relative;
-}
-
-nav a:hover,
-nav p:hover {
-    color: $white;
-}
-
-.sub-menu {
+.hamburger {
     display: none;
-    background: $mid-blue;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
 }
 
-// Would appreciate feedback about drop-down. Got it to work on the middle li p, but when I applied it to the menu bars, it only peeks out.
 
 
 
 
-
-@media (max-width: 780px){
-    nav ul{
-        justify-content: flex-end;
-        
-        li a,
-        li p {
-            display: none;
-        }
-    }
-
-    .nav-menu li .fa-bars {
-        display: block;
-        margin-right: 100px;
-
-        &:hover {
-        color: white;
-    }
-}
-
-    .nav-menu li:hover ul.sub-menu {
-        display: block;
-    }
-}
 
 
 

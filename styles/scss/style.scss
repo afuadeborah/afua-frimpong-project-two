@@ -1,11 +1,12 @@
 @import 'setup';
-@import 'variables-mixins';
+@import 'variables';
 @import 'navigation';
+@import 'home';
 @import 'form';
 @import 'blog';
 @import 'contact';
 
-// Strip Club
+// Stripping and Defaults
 a,
 li,
 ul,
@@ -16,6 +17,7 @@ h3,
 h4 {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 ul,
@@ -31,8 +33,9 @@ html {
 }
 
 img {
-    display: block;
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 body{
@@ -112,214 +115,6 @@ button:hover {
     font-size: 2.5rem;
 }
 
-li .fa-bars {
-    display: none;
-}
-
-
-// Harper Main Page
-.header-center {
-    display: flex;
-    justify-content: center;
-
-}
-
-.header-pic {
-    @include grow-shrink(calc(50% - 60px));
-    margin-right: 60px;
-
-
-    img {
-        box-shadow: 15px 15px 0px 0px white;
-        position: relative;
-        top: 70px;
-    }
-}
-
-.header-text {
-    align-self: center;
-
-    img {
-        position: absolute;
-        width: auto;
-        top: 63%;
-        right: 6%;
-    }
-}
-
-
-
-// Who Is She
-.main-wrapper {
-    
-    .who-is-she {
-        padding: 60px 0;
-        margin: 80px 0;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        position: relative;
-        left: 52%;
-        margin-left: 50px;
-
-        p {
-            margin: 30px 0;
-        }
-    }
-}
-// adjust margin and padding for responsivity
-
-
-
-// Four Icons & Text
-.four-square p{
-    margin-left: 60px;
-}
-
-.mid-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px 0;
-
-    li {
-        width: 100%;
-        flex: 1 0 calc(50% - 20px);
-        margin: 50px 0;
-    }
-}
-
-.icon-circle-container {
-    align-items: center;
-
-    .icon-circle {
-        height: 50px;
-        width: 50px;
-        background-color: $light-blue;
-        border-radius: 50%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px;
-        margin-right: 15px;
-    }
-    
-}
-// All credit to @iandonahue on jsfiddle.net for the code in order to center font-awesome icons inside circle: http://jsfiddle.net/iandonahue/M3jxT/1409
-
-
-// Text & Pic Grid 
-.photo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    // margin-bottom: 80px;
-}
-
-.four-grid,
-.gallery {
-    background-color: white;
-}
-
-.image-container,
-.text-container {
-    width: 100%;
-    @include grow-shrink(50%);
-}
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h3,
-    p {
-        margin-bottom: 15px;
-    }
-
-}
-
-.text-container:nth-of-type(2){
-    padding-right: 0;
-    padding-left: 50px;
-
-        button {
-            align-self: flex-start;
-        }
-}
-
-
-.text-container:nth-of-type(3) {
-    padding-right: 50px;
-    padding-left: 0;
-
-        button {
-        align-self: flex-end; 
-    }
-}
-
-
-.image-container:first-of-type img {
-    box-shadow: 15px 15px 0px 0px $mid-blue, -150px 15px 0px 0px $mid-blue;
-    position: relative;
-    bottom: 10%;
-}
-
-.image-container:last-of-type img {
-    box-shadow: 120px 15px 0 $light-blue;
-    position: relative;
-    top: 10%;
-}
-
-
-// Her Journey
-.harpers-journey {
-    padding: 90px 0;
-}
-
-.her-journey {
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 0;
-
-    img {
-        margin-right: 45px;
-        box-shadow: 15px 15px 0px 0px $dark-blue;
-    }
-
-    .journey-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 1 0 calc(70% - 45px);
-        padding-left: 50px;
-
-        h2,
-        p {
-            margin-bottom: 30px;
-        }
-
-        button {
-            align-self: flex-start;
-        }
-    }
-}
-
-
-// 3 Pic Grid
-.bottom-three {
-    display: flex;
-    justify-content: space-around;
-}
-
-.gallery {
-    padding: 60px 0;
-}
-
-.three-pic {
-    margin: 30px 10px;
-    width: calc(33% - 30px);  
-    @include grow-shrink(33%);
-}
 
 
 // Footer
@@ -331,7 +126,7 @@ li .fa-bars {
 
 
 // Media Queries
-@media (max-width: 1050px) {
+@include desktop {
 
 // Header
 
@@ -339,14 +134,8 @@ li .fa-bars {
         font-size: 9rem;
     }
 
-    .header-text img {
-        top: 53%;
-        right: 5%;
-        width: 15%;
-    }
-    // I'm waving the white flag here, according to wakatime it's been over 12 hours, not my best work, I'm sorry.
 
-// Who Is She (a mess)
+// Who Is She 
     .main-wrapper .who-is-she {
         margin-left: 0;
     }
@@ -397,7 +186,7 @@ li .fa-bars {
 }
 }
 
-@media (max-width: 780px) {
+@include mobile-tablet {
 
 // Header
     .header-text img {
@@ -408,9 +197,7 @@ li .fa-bars {
     font-size: calc(7rem - 0.5vw);
     }
 
-    .header-pic img {
-        position: static;
-    }
+  
 
 // Who Is She
     .main-wrapper .who-is-she {
@@ -476,7 +263,7 @@ li .fa-bars {
     }
 }
 
-@media (max-width: 480px) {
+@include mobile {
 // Header
     .header-center {
         flex-direction: column-reverse;
@@ -537,6 +324,6 @@ li .fa-bars {
     }
 }
 
-// 2:12am: not the most dry code, would like feedback from project 1 + still getting comfortable with the compiler! Any feedback is appreciated!
+
 
 
